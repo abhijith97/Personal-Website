@@ -1,0 +1,165 @@
+body
+{
+    /*background-image: url(blur3.jpg);*/
+    background-image: none;
+    background-color:rgb(199,203,181);
+    width:100%;
+    /*background-color: white;*/
+}
+
+
+div
+{
+    margin:0px;
+    padding:0px;
+    width:50%;
+    position:relative;
+    left:25%;
+    opacity:0.7;
+}
+
+img
+{
+    width:100%;
+    z-index: 0;
+}
+
+#a
+{
+    z-index: 1;
+    color: antiquewhite;
+    font-weight:bold;
+    position:absolute;
+    top:10%;
+    left:65%;
+    font-size:300%;
+    animation-name: a1;
+    animation-duration: 2s;
+    -webkit-animation-name: a1;
+    -webkit-animation-duration: 2s;
+}
+
+#b
+{
+    z-index: 1;
+    color: antiquewhite;
+    font-weight:bold;
+    position:absolute;
+    top:20%;
+    left:70%;
+    font-size: 300%;
+    animation-name: b1;
+    animation-duration: 2s;
+    -webkit-animation-name: b1;
+    -webkit-animation-duration: 2s;
+
+}
+
+#c
+{
+    z-index: 1;
+    color: antiquewhite;
+    font-weight:bold;
+    position:absolute;
+    top:30%;
+    left:75%;
+    font-size: 300%;
+    transition: transform;
+    transition-duration: 2s;
+    transform: rotate(+360deg);
+    animation-name: c1;
+    animation-duration: 2s;
+    -webkit-animation-name: c1;
+    -webkit-animation-duration: 2s;
+
+
+
+}
+
+.yay
+{
+    font-family:subheading;
+}
+
+@media screen and (max-width:956px)
+{
+    #a,#b,#c
+    {
+        font-size: 150%
+    }
+
+
+}
+
+@keyframes a1
+{
+    from
+    {
+        left:0%;
+    }
+    to
+    {
+        left:65%;
+    }
+}
+
+@keyframes b1
+{
+    from{
+        left:100%;
+    }
+    to
+    {
+        left:70%;
+    }
+
+}
+
+@keyframes c1
+{
+    from{
+        left:0%;
+    }
+    to
+    {
+        left:75%;
+    }
+
+}
+
+@-webkit-keyframes a1
+{
+    from
+    {
+        left:0%;
+    }
+    to
+    {
+        left:65%;
+    }
+}
+
+@-webkit-keyframes b1
+{
+    from{
+        left:100%;
+    }
+    to
+    {
+        left:70%;
+    }
+
+}
+
+@-webkit-keyframes c1
+{
+    from{
+        left:0%;
+    }
+    to
+    {
+        left:75%;
+    }
+
+}
+

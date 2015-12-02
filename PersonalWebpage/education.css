@@ -1,0 +1,98 @@
+aside
+{
+    float:right;
+    margin:20px;
+}
+
+div
+{
+    float:left;
+    margin:20px;
+}
+
+h3
+{
+
+    font-size: 220%;
+}
+
+strong
+{
+    font-size:120%;
+}
+
+
+
+
+
+
+#slideshow1
+{
+    float:right;
+    clear:both;
+    /*background-image:url(bg1.jpg);*/
+    width:21%;
+    height:21%;
+    margin-right: 5%;
+    /*animation: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    */
+    /*border-style: ridge;
+    border-color:saddlebrown;*/
+    border: 7.5px solid transparent;
+    border-image:url(woodenframe.jpg) 50 round;
+
+    box-shadow: 5px 5px 5px grey;
+}
+
+@media screen and (max-width:952px)
+{
+    #slideshow1
+    {
+
+        width:90%;
+    }
+}
+/*
+
+@keyframes slide
+{
+0%
+{
+background-image: url(slide1.jpg);
+}
+14.2%
+{
+background-image: url(slide2.jpg);
+}
+28.5%
+{
+background-image: url(slide3.jpg);
+}
+42.7%
+{
+background-image: url(slide4.jpg);
+}
+56.9%
+{
+background-image: url(slide5.jpg);
+}
+71.1%
+{
+background-image: url(slide6.jpg);
+}
+85.3%
+{
+background-image: url(slide7.jpg);   
+}
+
+100%
+{
+background-image: url(slide8.jpg);
+}
+}
+*/
+

@@ -1,0 +1,116 @@
+img
+{
+    box-shadow:5px 5px 5px grey;
+    width:27%;
+    transition: width,transform;
+    transition-duration: 1.5s;
+    -webkit-transition: width,transform;
+    -webkit-transition-duration: 1.5s;
+    -ms-transition: width,transform;
+    -ms-transition-duration: 1.5s;
+    -o-transition: width,transform;
+    -o-transition-duration: 1.5s;
+
+    margin:0px;
+    padding:0px;
+    /* border-style:ridge; 
+    border-color:rgb(0, 0, 31);*/
+    border: 7.5px solid transparent;
+    border-image:url(woodenframe.jpg) 50 round;
+
+}
+
+
+
+img:hover
+{
+    width:37.7%;
+    /*transform: rotate(360deg);*/
+}
+
+p
+{
+
+    max-width: none;
+    font-family: cursive;
+    font-size:1.5em;
+
+}
+
+video
+{
+    border-style: ridge;
+    border-color:rosybrown;
+    box-shadow:5px 5px 5px grey;
+}
+.right
+{
+
+    width:31%;
+    margin:0px;
+    text-align:left;    
+    /*border-left-style: groove;*/
+    padding:0px;
+    padding-left:13%;
+    /* position:relative;
+    left:61%;
+    */
+
+    text-align:left;
+    float: right;
+    clear:right;
+    padding-bottom:100px;
+    padding-right:2%;
+}
+
+.left
+{
+    width:31%;    
+    text-align:left;
+    /* border-right-style: groove;*/
+    margin-left:1.5%;
+    padding:0px;
+    padding-right: 13%;
+    /* position:relative;
+    left:4%;*/
+    float:left;
+    clear:left;
+    padding-bottom:100px;
+    padding-left:2%;
+}
+
+.imgright
+{
+    float:right;
+    clear:right;
+    margin:2%;
+}
+
+.imgleft
+{
+    float:left;
+    clear:left;
+    margin:2%;
+}
+
+@media screen and (max-width:700px)
+{
+    img
+    {
+        width:85%;
+    }
+    img:hover
+    {
+        width:87%;
+    }
+
+    .right
+    {
+        width:85%;
+    }
+
+    .left
+    {
+        width:87%;
+    }
+}

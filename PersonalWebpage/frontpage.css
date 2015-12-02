@@ -1,0 +1,261 @@
+@font-face
+{
+    font-family:timeburner;
+    src:url(timeburner_regular.ttf);
+
+
+}
+
+html
+{
+    font-family:timeburner,"Trebuchet MS", Helvetica, sans-serif;
+}
+
+body
+{
+    margin:0px;
+    overflow-x: hidden;
+}
+
+header
+{
+
+    margin:0px;
+    padding-top:1%;
+    padding-bottom:1%;
+    width:100%;
+    height:100%;
+    text-align:center;
+    background:url(banner.jpg);
+    font-family: timeburner, "URW Chancery L";
+    color:antiquewhite;
+    animation:colorchange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-size:130%;
+    animation-direction: alternate-reverse;
+    -webkit-animation:colorchange;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+
+}
+
+ul
+{
+    list-style-type:none;
+}
+
+nav
+{
+
+    float:right;
+    width:100%;
+    margin:0;
+    background-image: url("navwooden2.jpg");
+    border-style:ridge;
+    /*border-color:rgb(255, 255, 237);
+    border-width:1px;
+    */
+    box-shadow: 0px 5px 10px #888888;
+
+}
+
+.insidenav
+{
+    color:antiquewhite;
+    float:right;
+    width:100px;
+    text-decoration:none;
+    padding:10px;   
+    border-right-style:solid;
+    /*border-color:rgb(0, 0, 71);*/
+    margin:0px;
+    text-align:center;
+    transition-property:width,transform;
+    transition-duration: 2s;
+    -webkit-transition-property:width,transform;
+    -webkit-transition-duration: 2s;
+
+
+
+}
+
+a:hover
+{
+    /*opacity:0.4;*/
+    width:200px;
+    /*transform: rotate(360deg);*/
+
+}
+
+.webkit a:hover
+{
+    width:200px;
+
+
+}
+
+.chrome a:hover
+{
+    width:200px;
+
+}
+
+.ie a:hover
+{
+    width:200px;
+
+}
+iframe
+{
+
+    width: 100%;
+    /*height:985px;*/
+    margin-bottom: -1.1%;
+
+    /*overflow: auto;*/
+}
+
+footer
+{
+    margin: 0px;
+    height: 1%;
+    padding: 1.1%;
+    background:url(banner.jpg);
+    text-align: center;
+    color: antiquewhite;
+}
+
+#date
+{
+    color:yellow;
+
+}
+
+
+button
+{
+    padding-left:5px;
+    margin-left: 5px;
+    margin-top: 1%;   
+}
+
+input
+{
+    padding-left:5px;
+    margin-left: 10px;
+    margin-top: 1%; 
+    border-style: groove;
+    border-color:black;
+
+}
+
+
+@media screen and (max-width:1581px)
+
+{
+    nav
+    {
+        background-image:url(banner.jpg);
+
+    }
+}
+
+
+@media screen and (max-width:960px)
+{
+    a:hover
+    {
+        /*opacity:0.4;*/
+        width:100px;
+        /*transform: rotate(360deg);*/
+
+    }
+
+    .webkit a:hover
+    {
+        width:100px;
+
+
+    }
+
+    .chrome a:hover
+    {
+        width:100px;
+
+    }
+
+    .ie a:hover
+    {
+        width:100px;
+
+    }
+
+
+}
+
+@keyframes colorchange
+{
+
+    33%
+    {
+        color:antiquewhite; 
+    }
+    66%
+    {
+        color:sandybrown
+    }
+    100%
+    {
+        color: brown
+    }
+}
+
+@-webkit-keyframes colorchange
+{
+
+    33%
+    {
+        color:antiquewhite; 
+    }
+    66%
+    {
+        color:sandybrown
+    }
+    100%
+    {
+        color: brown
+    }
+}
+
+
+.fixed1
+{
+    position: fixed;
+    left:0%;
+    bottom:40%;
+
+    background-color:antiquewhite;
+    border-style: groove;
+
+    border-color: bisque;
+    box-shadow: 5px 5px 5px grey;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+.icon
+{
+    width:17.5px;
+
+    transition-property: width;
+    transition-duration: 1s;
+
+}
+
+.icon:hover
+{
+    width:50px; 
+}
+

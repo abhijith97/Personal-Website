@@ -1,0 +1,51 @@
+html
+{
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+body
+{
+    background-image:url(navwooden3.jpg);
+    width:100%;
+    margin:0px;
+}
+
+h2
+{
+    font-family: "subheading";
+    border-bottom-style:solid;
+    border-color:black;
+    padding:20px;
+    font-size:200%;
+}
+
+strong
+{
+    font-weight:bold;
+}
+
+em
+{
+    font-style:italic;
+}
+p
+{
+    max-width:600px;
+    font-family: cursive;
+    font-size:140%;
+}
+
+/*@font-face
+{
+font-family:timeburner;
+src:url(timeburner_regular.ttf);
+
+
+
+}*/
+@font-face
+{
+    font-family:subheading;
+    src:url(subheading.ttf)
+
+}

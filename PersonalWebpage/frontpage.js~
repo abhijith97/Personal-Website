@@ -1,0 +1,92 @@
+
+
+
+
+            function load()
+            {
+                document.title=document.getElementById("ram").contentWindow.document.title;
+            }
+
+
+            function func()
+            {
+
+                setInterval(function(){document.getElementById("date").innerHTML = Date()},100);
+
+            }
+
+            function Navigation()
+            {
+
+                var a;
+                a=document.getElementById("navigation").value;
+                if(a==="Contact"||a==="contact")        
+                {
+                    window.open("contact.html","iframe1");
+                }
+                else if(a==="Education"||a==="education")    
+                {
+                    window.open("education.html","iframe1");
+
+                }
+                else if(a==="About"||a==="about")            
+                {
+
+                    window.open("about.html","iframe1");
+                }
+                else if(a==="home"||a==="Home")
+                {
+                    window.open("home.html","iframe1");
+                }
+                else
+                {
+                    alert("Please enter a valid page!");
+                }
+            }
+
+            /* function heightinit()
+            {
+           var height1=document.getElementById("ram").offsetHeight;
+                alert(height1);
+               document.getElementById("body1").style.height=height1;
+               document.getElementById("ram").style.height=height1;
+            }
+*/
+
+
+
+            function getDocHeight(doc) 
+            {
+                doc = doc || document;
+                var body = doc.body, html = doc.documentElement;
+                var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                                      html.clientHeight, html.scrollHeight, html.offsetHeight );
+                return height;
+            }
+
+            function setIframeHeight(id)
+            {
+                var ram = document.getElementById(id);
+                var doc = ram.contentDocument? ram.contentDocument: 
+                ram.contentWindow.document;
+                ram.style.visibility = 'hidden';
+                ram.style.height = "10px";     
+                ram.style.height = getDocHeight( doc ) + 4 + "px";
+                ram.style.visibility = 'visible';
+            } 
+
+            function click1(i)
+            {
+                var k;
+                for(k=1;k<=4;k++)
+                {
+                    document.getElementById(k).style.opacity=1;
+                    document.getElementById(k).style.fontSize="1em";
+
+                }
+                document.getElementById(i).style.opacity=0.4;
+                document.getElementById(i).style.fontSize="1.5em";
+
+            }
+
+ 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>	
+        <link rel="icon" href="me.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="frontpage.css">
+        <script src="frontpage.js"></script>
+        <title>Abhijith Nair</title>
+        <meta charset="UTF-8">
+
+
+    </head>
+    <body id="body1" onresize="func()" onload="func()"> 
+
+        <header>
+            <h1>Abhijith Nair</h1>
+        </header>
+
+
+        <nav>
+
+
+            <input class="left" placeholder="Enter a valid page!" id="navigation" type="text" name="navig">     
+
+
+
+            <button onclick="Navigation()">Navigate!</button>
+
+            <a id="1" class="insidenav" onclick="click1(1)" href="contact.html" target="iframe1">Contact</a>
+            <a id="2" class="insidenav" onclick="click1(2)" href="education.html" target="iframe1">Education</a>
+            <a id="3" class="insidenav" onclick="click1(3)" href="about.html" target="iframe1">About</a>
+            <a id="4" class="insidenav" onclick="click1(4)" href="home.html" target="iframe1">Home</a>
+
+
+
+
+
+        </nav>
+
+        <div class=fixed1>
+            <a href="home.html" target="iframe1"><img title="ABC" onmouseover="changeimg(6)" onmouseout="changeimg1(6)" class="icon" id="6" src=home.png alt="home"></a><br>
+            <a href="about.html" target="iframe1"><img onmouseover="changeimg(7)" onmouseout="changeimg1(7)" alt="about" class="icon" id="7" src=businessman65.png></a><br>
+            <a href="education.html" target="iframe1"><img onmouseover="changeimg(8)" onmouseout="changeimg1(8)" alt="education" class="icon" id="8" src=books8.png></a><br>
+            <a href="contact.html" target="iframe1"><img onmouseover="changeimg(9)" onmouseout="changeimg1(9)" alt="contact" class="icon" id="9" src=send4.png></a><br>
+
+
+        </div>
+
+        <iframe id="ram" onload="load(),setIframeHeight(this.id)" onresize="setIframeHeight(this.id)" src="home.html" name="iframe1"></iframe>
+
+        <footer>
+            ©Abhijith A Nair
+            <p id="date"></p>
+
+        </footer>
+    </body>
+</html>					

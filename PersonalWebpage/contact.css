@@ -1,0 +1,78 @@
+body
+{
+    width:100%;
+}
+
+img
+{
+    width:30%;
+    margin:3%;
+    position:static;
+    float:left;
+    clear: left;
+    border: 7.5px solid transparent;
+    border-image:url(woodenframe.jpg) 50 round;
+    box-shadow:5px 5px 5px grey;
+
+}
+
+.icons:hover
+{
+
+    width:6%;
+
+}
+
+p
+{
+
+    font-size:130%;
+
+    overflow-x: visible;
+    width: 90%;
+    margin:20px;
+    padding:10px;
+
+}
+
+.icons
+{
+
+    width:5%;
+    transition-property: width;
+    transition-duration: 1s;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -ms-transition-property: width;
+    -ms-transition-duration: 1s;
+    -o-transition-property: width;
+    -o-transition-duration: 1s;
+    border-style: ridge;
+    border-color:bisque;
+
+    float:right;
+    clear:left;
+
+
+
+}
+
+
+
+
+/*
+position: absolute;
+left:90%;
+width:100%;
+*/
+
+
+
+
+
+
+
+/*    float:right
+clear: right;
+*/
+
